@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E065ED32-9FFC-44DD-86FE-7CD27F6A71AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TP</RootNamespace>
+    <AssemblyName>TP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clsCategorias.cs" />
+    <Compile Include="Clases\clsClientes.cs" />
+    <Compile Include="Clases\clsDetalleVta.cs" />
+    <Compile Include="Clases\clsFacturasCp.cs" />
+    <Compile Include="Clases\clsFacturasVtas.cs" />
+    <Compile Include="Clases\clsMarcas.cs" />
+    <Compile Include="Clases\clsMoneda.cs" />
+    <Compile Include="Clases\clsProductos.cs" />
+    <Compile Include="Clases\clsProveedores.cs" />
+    <Compile Include="Clases\clsProvincias.cs" />
+    <Compile Include="Clases\clsPaises.cs" />
+    <Compile Include="Formularios\frmABMCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMCategorias.Designer.cs">
+      <DependentUpon>frmABMCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMPedCp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMPedCp.Designer.cs">
+      <DependentUpon>frmABMPedCp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaClientes.Designer.cs">
+      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMMarcas.Designer.cs">
+      <DependentUpon>frmABMMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMMoneda.Designer.cs">
+      <DependentUpon>frmABMMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMPedVta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMPedVta.Designer.cs">
+      <DependentUpon>frmABMPedVta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMProveedores.Designer.cs">
+      <DependentUpon>frmABMProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMProvincias.Designer.cs">
+      <DependentUpon>frmABMProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMPaises.Designer.cs">
+      <DependentUpon>frmABMPaises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBuscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBuscador.Designer.cs">
+      <DependentUpon>frmBuscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMProductos.Designer.cs">
+      <DependentUpon>frmABMProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaProductos.Designer.cs">
+      <DependentUpon>frmConsultaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.cs" />
+    <Compile Include="Formularios\frmABMClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMClientes.Designer.cs">
+      <DependentUpon>frmABMClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmABMCategorias.resx">
+      <DependentUpon>frmABMCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMPedCp.resx">
+      <DependentUpon>frmABMPedCp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaClientes.resx">
+      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMMarcas.resx">
+      <DependentUpon>frmABMMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMMoneda.resx">
+      <DependentUpon>frmABMMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMPedVta.resx">
+      <DependentUpon>frmABMPedVta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMProveedores.resx">
+      <DependentUpon>frmABMProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMProvincias.resx">
+      <DependentUpon>frmABMProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMClientes.resx">
+      <DependentUpon>frmABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMPaises.resx">
+      <DependentUpon>frmABMPaises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBuscador.resx">
+      <DependentUpon>frmBuscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMProductos.resx">
+      <DependentUpon>frmABMProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaProductos.resx">
+      <DependentUpon>frmConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
